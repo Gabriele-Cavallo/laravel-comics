@@ -20,6 +20,7 @@
 
     <main>
         @yield('content')
+        @include('partials.services')
     </main>
 
     @include('partials.footer')

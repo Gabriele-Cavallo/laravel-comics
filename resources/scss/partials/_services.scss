@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+.container-services{
+    background-color: $primary-color;
+    padding: 60px 0;
+    *{
+        color: white;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            width: calc((100% / 5) - 25px);
+            a{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 30%;
+                    height: 60px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
