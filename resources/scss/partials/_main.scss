@@ -1,9 +1,30 @@
 @use './variables' as *;
 
-section#home{
+section#main{
     background-color: #1c1c1c;
     .container{
         padding: 40px 0 10px;
+        position: relative;
+        .badge{
+            padding: 15px;
+            background-color: $primary-color;
+            width: 200px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            &.series{
+                position: absolute;
+                top: 0;
+                left: -10px;
+                transform: translateY(-50%);
+
+            }
+            &.load{
+                margin: 0 auto 20px;
+                width: 250px;
+            }
+        }
         ul{
             display: flex;
             justify-content: space-between;

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <section id="home">
+    <section id="main">
         <div class="container">
+            <div class="badge series">CURRENT SERIES</div>
             <ul>
                 @foreach ($comics as $comic)
                     <li>
@@ -11,6 +12,7 @@
                     </li>
                 @endforeach
             </ul>
+            <div class="badge load">LOAD MORE</div>
         </div>
     </section>
 @endsection
