@@ -1,13 +1,11 @@
 @use './variables' as *;
 
 header{
-    height: 150px;
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
-        margin: 0 auto;
+        height: 150px;
     }
     .nav-wrapper{
         ul{
@@ -23,5 +21,12 @@ header{
                 }
             }
         }
+    }
+    .jumbotron{
+        height: 600px;
+        background-image: url('../img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
     }
 }

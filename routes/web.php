@@ -24,5 +24,5 @@ Route::get('/comics', function () {
         'comics' => $comics
     ];
     
-    return view('comics');
+    return view('comics', $data);
 })->name('comics');
